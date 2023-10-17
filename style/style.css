@@ -1,3 +1,10 @@
 body{
     background: white;
 }
+
+iframe{
+    background: yellow;
+    display: block;
+    width: 500px;
+    height: 400px;
+}
