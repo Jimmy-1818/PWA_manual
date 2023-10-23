@@ -2,7 +2,7 @@ async function test(){
     alert("in test")
     // Ottieni l'accesso alla directory specifica
     const directoryPath = 'Scheda SD/DCIM/Camera';
-    const directory = await window.showDirectoryPicker({ startIn: directoryPath });
+    const directory = await window.showOpenFilePicker({ startIn: directoryPath });
 ''
     // Ottieni un oggetto di tipo `FileSystemDirectoryHandle` per la directory
     const directoryHandle = await directory.getDirectory();
