@@ -1,4 +1,5 @@
 async function test(){
+    alert("IN")
     try {
         const directoryHandle = await window.showDirectoryPicker();
         const entries = [];
@@ -7,7 +8,7 @@ async function test(){
             entries.push(entry.name);
         }
 
-        console.log(directoryHandle)
+        alert(directoryHandle)
         alert(entries);
     }catch (error) {
         console.error(error);
