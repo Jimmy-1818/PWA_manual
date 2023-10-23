@@ -1,4 +1,4 @@
-function test(){
+async function test(){
     alert("__")
     // Ottieni l'accesso alla directory specifica
     const directoryPath = 'Scheda SD/DCIM/Camera';
