@@ -7,7 +7,7 @@ async function test(){
             entries.push(entry.name);
         }
 
-        console.log(entries);
+        alert(entries);
     }catch (error) {
         console.error(error);
     }
