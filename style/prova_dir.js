@@ -1,5 +1,5 @@
 async function test(){
-    alert("__")
+    alert("in test")
     // Ottieni l'accesso alla directory specifica
     const directoryPath = 'Scheda SD/DCIM/Camera';
     const directory = await window.showDirectoryPicker({ startIn: directoryPath });
