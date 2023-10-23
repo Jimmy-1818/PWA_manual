@@ -1,4 +1,4 @@
-const version = 34
+const version = 1.0
 
 const assets = [
     // '/',

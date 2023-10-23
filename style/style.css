@@ -2,9 +2,12 @@ body{
     background: white;
 }
 
-iframe{
-    background: yellow;
-    display: block;
-    width: 500px;
-    height: 400px;
+button{
+    width: 30%;
+    aspect-ratio: 3;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
