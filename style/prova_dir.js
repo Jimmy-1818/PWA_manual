@@ -1,4 +1,5 @@
 function test(){
+    alert("__")
     // Ottieni l'accesso alla directory specifica
     const directoryPath = 'Scheda SD/DCIM/Camera';
     const directory = await window.showDirectoryPicker({ startIn: directoryPath });
