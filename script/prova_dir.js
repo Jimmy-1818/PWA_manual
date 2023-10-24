@@ -1,15 +1,13 @@
 async function test(){
     alert("IN")
     try {
-        const directoryHandle = await window.showDirectoryPicker();
-        const entries = [];
+        const [handle] = await window.showOpenFilePicker();
+        const file = await handle.getFile
+        const filename = await handle.getFileName
         
-        for await (const entry of directoryHandle.values()) {
-            entries.push(entry.name);
-        }
-
-        alert(directoryHandle)
-        alert(entries);
+        console.log(filename)
+        alert(file)
+        
     }catch (error) {
         console.error(error);
     }
