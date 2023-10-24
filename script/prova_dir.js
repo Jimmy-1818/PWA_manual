@@ -21,6 +21,8 @@ function handleFileSelect() {
     if (fileInput.files.length > 0) {
       // Ottenere la lista di file selezionati
       const selectedFiles = fileInput.files;
+      console.log("fileInput: " + fileInput)
+      console.log("selectedFiles" + selectedFiles)
       
       // Creare un array per i nomi dei file
       const fileNames = [];
@@ -28,8 +30,17 @@ function handleFileSelect() {
       // Iterare attraverso la lista di file
       for (let i = 0; i < selectedFiles.length; i++) {
         // Aggiungere il nome di ciascun file all'array
-        fileNames.push(selectedFiles[i].name);
+        var curret_fileName = selectedFiles[i].name
+        if (curret_fileName == "COMMIT_EDITMSG"){
+            console.log("___break___")
+            break
+        }
+        if (curret_fileName.substring(0,2) == "._"){
+            continue
+        }
+        fileNames.push(curret_fileName);
       }
+
   
       // Ora fileNames contiene i nomi di tutti i file selezionati
       alert(fileNames);
