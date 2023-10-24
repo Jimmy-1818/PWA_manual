@@ -2,7 +2,7 @@ body{
     background: white;
 }
 
-button{
+.center_el{
     width: 30%;
     aspect-ratio: 3;
     border-radius: 10px;
