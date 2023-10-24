@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // async function test(){
 //     alert("IN")
 //     try {
@@ -12,6 +13,16 @@
 //         console.error(error);
 //     }
 // }
+=======
+async function test(){
+    alert("in test")
+    // Ottieni l'accesso alla directory specifica
+    const directoryPath = 'Scheda SD/DCIM/Camera';
+    const directory = await window.showDirectoryPicker({ startIn: directoryPath });
+''
+    // Ottieni un oggetto di tipo `FileSystemDirectoryHandle` per la directory
+    const directoryHandle = await directory.getDirectory();
+>>>>>>> parent of 1d53acb (s)
 
 function handleFileSelect() {
     // Ottenere l'elemento di input file

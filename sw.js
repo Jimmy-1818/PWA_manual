@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const version = 11
+=======
+const version = 6
+>>>>>>> parent of 1d53acb (s)
 
 const assets = [
     // '/',
