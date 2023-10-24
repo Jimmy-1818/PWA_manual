@@ -19,15 +19,19 @@ function handleFileSelect() {
     
     // Verificare se sono stati selezionati dei file
     if (fileInput.files.length > 0) {
-      // Ottenere il primo file
-      const selectedFile = fileInput.files[0];
+      // Ottenere la lista di file selezionati
+      const selectedFiles = fileInput.files;
       
-      // Puoi accedere a informazioni sul file, ad esempio nome e tipo
-      const fileName = selectedFile.name;
-      const fileType = selectedFile.type;
+      // Creare un array per i nomi dei file
+      const fileNames = [];
   
-      // Puoi fare altro con il file, come inviarlo a un server
-      console.log(`Nome del file: ${fileName}`);
-      console.log(`Tipo del file: ${fileType}`);
+      // Iterare attraverso la lista di file
+      for (let i = 0; i < selectedFiles.length; i++) {
+        // Aggiungere il nome di ciascun file all'array
+        fileNames.push(selectedFiles[i].name);
+      }
+  
+      // Ora fileNames contiene i nomi di tutti i file selezionati
+      alert(fileNames);
     }
   }
