@@ -41,7 +41,7 @@ function handleFileSelect() {
         fileNames.push(curret_fileName);
       }
 
-  
+      
       // Ora fileNames contiene i nomi di tutti i file selezionati
       alert(fileNames);
     }
