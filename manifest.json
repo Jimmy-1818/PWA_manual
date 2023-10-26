@@ -2,7 +2,7 @@
     "name": "Prova APP",
     "short_name": "Prova APP",
     "start_url": ".",
-    "background_color": "blue",
+    "background_color": "gray",
     "theme_color": "#0abab5",
     "display": "standalone",
     "icons": [
