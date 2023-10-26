@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-const version = 11
-=======
-const version = 6
->>>>>>> parent of 1d53acb (s)
-
+const version = 12
 const assets = [
     // '/',
     // '/index.html',
